@@ -7,12 +7,6 @@ class NewComp extends Component {
         color: 'purple'
     };
 
-    ButtonChange = () => {
-        this.setState({
-            message: 'Thank you for watching my code'
-        })
-    }
-
     render() {
         return (
             <div className='App'>
@@ -34,6 +28,5 @@ const mapDispatchtoProps = (dispatch) => {
         ButtonChange: () => dispatch({ type: 'Message change' })
     };
 };
-
 
 export default connect(mapStatetoProps, mapDispatchtoProps)(NewComp);
